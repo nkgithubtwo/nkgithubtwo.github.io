@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+}
+
+.Header{
+    height: 10vh;
+    width:100%;
+    background-color: brown
+    
+}
+
+.left{
+    width: 50%;
+    float:left;
+    text-align: center;
+    line-height: 30px;
+    color:rgb(193, 210, 216);
+    
+}
+
+.right{
+    width: 50%;
+    float: right;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+
+    
+}
+
+.main{
+    height:100%;
+    width: 100%;
+    background-color: bisque;
+    padding-top: 40px;
+}
+
+a{
+    padding-right:20px;
+    cursor: pointer;
+}
+.headingStyle{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+    background-color: brown;
+    border-radius: 20px;
+    height: 50px;
+    width: 140px;
+    color:white;
+}
+.pizzaBurger{
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    padding: 20px 20px;
+}
+.name{
+    color:brown;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 30px;
+    font-weight: bold;
+}
+
+.img{
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px  brown;
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(240, 64, 64, 0.925);
+
+}
+
+#copy{
+    font-weight: bold;
+}
+
+.survey{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+

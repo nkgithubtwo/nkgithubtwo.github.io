@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="survey.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 style="color: white;">Survey Form</h1>
+
+    <form id="form">
+
+        <div class="form1">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name" id="textbox" required pattern="[a-zA-Z]+"/>
+        </div>
+
+        <div class="form1">
+            <label for="name">Email</label>
+            <input type="email" placeholder="Email" id="textbox" required pattern=".+@gmail\.com"/>
+        </div>
+
+        <div class="form1">
+            <label for="name">Age</label>
+            <input type="number" placeholder="30" id="textbox" required min="18" max="99"/>
+        </div>
+
+        <div class="form1">
+            <label for="food">Check your Favourite Food :</label>
+            <label><input type="checkbox" name="check" id="checkbox"/>Pizza</label>
+            <label><input type="checkbox" name="check" id="checkbox"/>Burger</label>
+            <label><input type="checkbox" name="check" id="checkbox"/>Momos</label>
+            <label><input type="checkbox" name="check" id="checkbox"/>Coffee</label>
+            <label><input type="checkbox" name="check" id="checkbox"/>French Fries</label>
+         </div>
+       
+        <div class="form1">
+            <label for="food">Which food do you like most?</label>
+            <select name="food" id="food">
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+                <option value="Momos">Momos</option>
+                <option value="Coffee">Coffee</option>
+                <option value="French Fries">French Fries</option>
+
+            </select>
+        </div>
+
+        <div class="form1">
+            <label for="food">Are you happy with Food quality?</label>
+           <label ><input type="radio" name="rec1" id="rec">Yes</label>
+           <label ><input type="radio" name="rec1" id="rec">No</label>
+           <label ><input type="radio" name="rec1" id="rec">Sometimes</label>
+        </div>
+
+        <div class="form1">
+            <label for="food">Are you happy with Food service?</label>
+           <label ><input type="radio" name="rec1" id="rec">Yes</label>
+           <label ><input type="radio" name="rec1" id="rec">No</label>
+           <label ><input type="radio" name="rec1" id="rec">May be</label>
+        </div>
+
+        <div class="form1">
+            <label for="food">Would you recommend <b>Geekster Food World </b> to a friend?</label>
+           <label ><input type="radio" name="rec1" id="rec">Yes</label>
+           <label ><input type="radio" name="rec1" id="rec">No</label>
+           <label ><input type="radio" name="rec1" id="rec">May be</label>
+        </div>
+
+        <div class="form1">
+            <label for="food">Any Comments or suggestions :</label>
+            <textarea id="textarea"></textarea>
+        </div>
+
+        <div class="form1">
+            <label><input type="submit" value="SUBMIT" class="submit"/></label>
+        </div>
+
+
+    </form>
+</body>
+</html>
