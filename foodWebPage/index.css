@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+}
+
+#Header{
+    height: 70px;
+    width:100%;
+    
+}
+
+#left{
+    width: 40%;
+    float:left;
+    text-align: center;
+    line-height: 70px;
+    color:lightblue;
+    
+}
+
+#right{
+    width: 60%;
+    float: right;
+    text-align: center;
+    line-height: 70px;
+    color: blue;
+
+    
+}
+a{
+    padding-right:20px;
+    cursor: pointer;
+}
+
+#main
+{
+    background-image: linear-gradient(90deg, white, lightblue,white);
+
+    height: 1960px;
+    width: 100%;
+    text-align: center;
+}
+
+#eyf{
+    color:white;
+    font-size: 18px;
+    width: 600px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 10px;
+    background-image:linear-gradient(90deg, lightblue, blue, lightblue);
+    margin:20px auto;
+    
+
+}
+
+#pizza{
+    height: 380px;
+    margin: 25px auto;
+}
+
+#pizleft{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#pizright{
+    float:right;
+    width: 50%;
+    text-align: center;
+    
+}
+
+table{
+    height: 100px;
+    margin: 20px auto;
+
+}
+
+#fries{
+    width: 300px;
+    margin: 0  35px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px blue;
+    ;
+    
+}
+
+#footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+
+}
+
+#copy{
+    font-weight: bold;
+}
+
