@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <h2>Registration Page</h2>
+
+    <div class="main">
+      <div class="container">
+        <div class="img">
+          <div class="content">
+            FoodWorld
+
+            <div class="main_content">
+              <h1>Welcome to Geeks Restaurant.</h1>
+              <h3>Are you ready to try this one?<h3>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <form>
+            <div class="form-ele">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                class="textbox"
+                required pattern="[a-Z]"
+              />
+            </div>
+            <div class="form-ele">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                placeholder="Email"
+                name="email"
+                class="textbox"
+                required pattern=".+@gmail\.com" size="30"
+              />
+            </div>
+
+            <div class="form-ele">
+              <label for="name">Age</label>
+              <input type="text" placeholder="Age" name="age" class="textbox" required pattern="[0-9]+"/>
+            </div>
+            <div class="form-ele">
+              <label for="name">Password</label>
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                class="textbox"
+                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              />
+            </div>
+            <div class="form-ele">
+              <label for="name">Confirm Password</label>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                name="password"
+                class="textbox"
+                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              />
+            </div>
+
+
+            <div class="form-ele">
+                <input
+                  type="submit"
+                  name="password"
+                  value="Register"
+                  class="button"
+                />
+             <span style="margin-left:20px; color:white">Already Signed? <a href="login.html">Login Here </a></span>
+                
+              </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
