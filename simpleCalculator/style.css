@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+
+body{
+    height: 80vh;
+    
+    
+}
+#button_container{
+    position: absolute;
+    height: 60vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: auto auto auto;  
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center; 
+    
+    
+}
+
+#display{
+    height: 80px;
+    width: 410px;
+    background-image: linear-gradient(to right ,pink, rgb(241, 98, 98), pink);
+    margin: 7px auto;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: right;
+}
+
+.item{
+    height: 80px;
+    width: 130px;
+    background-image: linear-gradient(to right,rgb(252, 33, 33),rgb(250, 59, 91));
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 30px;
+    color: white;
+}
+
