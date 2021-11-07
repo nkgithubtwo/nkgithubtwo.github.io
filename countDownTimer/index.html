@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday CountDown Timer</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <p id="timer"></p>
+
+    <script>
+      var toCountDown = new Date("May 23, 2022 12:32:13").getTime(); //take the date for countDown
+
+      var updateCounter = setInterval(function () {
+        //function to update countdown timer
+        var todayDateTime = new Date().getTime(); //take current time
+
+        var difference = toCountDown - todayDateTime; //difference between current and given date
+
+        //claculate remaining time in terms of days , hours, min, seconds
+
+        var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (difference % (1000 * 60 * 60 * 60 * 24)) / (1000 * 60 * 60 * 60)
+        );
+        var mins = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        var secs = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML =
+          days + "Days " + hours + "Hours " + mins + "min " + secs + "s";
+
+        //to check if counter Date already passed
+        if (difference < 0) {
+          clearInterval(updateCounter);
+
+          document.getElementById("timer").innerHTML = "Timer Expired";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
