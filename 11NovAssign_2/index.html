@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greeting To User</title>
+    <link rel="stylesheet" href="assign2Css.css" />
+  </head>
+  <body>
+    <div>
+      <p id="result">Hello!!...</p>
+      <p id="name">Naveen Katiyar</p>
+    </div>
+
+    <button onclick="func(this.id)" id="b1" class="btn btn1">
+      Good Morning
+    </button>
+    <button onclick="func(this.id)" id="b2" class="btn btn2">
+      Good Evening
+    </button>
+    <button onclick="func(this.id)" id="b3" class="btn btn3">Good Night</button>
+
+    <script>
+      function func(buttonClick) {
+        let ele_display = document.getElementById("result");
+
+        if (buttonClick == "b1") {
+          ele_display.innerText = document.getElementById("b1").innerText;
+        } else if (buttonClick == "b2") {
+          ele_display.innerText = document.getElementById("b2").innerText;
+        } else {
+          ele_display.innerText = document.getElementById("b3").innerText;
+        }
+      }
+    </script>
+  </body>
+</html>

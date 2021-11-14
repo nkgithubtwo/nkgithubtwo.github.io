@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: purple;
+      }
+      div {
+        height: 100vh;
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        display: flex;
+        flex-flow: nowrap column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        text-decoration: underline;
+      }
+
+      input {
+        height: 30px;
+        outline: none;
+        font-size: 15px;
+      }
+      input:hover {
+        height: 40px;
+      }
+
+      .b1 {
+        height: 40px;
+        width: 185px;
+        margin-top: 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: gainsboro;
+        border: none;
+      }
+
+      .b1:hover {
+        background-color: grey;
+        color: white;
+        height: 48px;
+        width: 190px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Show/hide Password</h2>
+      <h3>Enter password below:</h3>
+      <input type="password" id="i1" />
+      <button onclick="func()" class="b1">Show Password</button>
+    </div>
+
+    <script>
+      function func() {
+        let textDis = document.getElementById("i1");
+
+        let buttonText = document.querySelector(".b1");
+
+        if (buttonText.innerText == "Show Password") {
+          textDis.type = "text";
+          buttonText.innerText = "Hide Password";
+        } else {
+          textDis.type = "password";
+          buttonText.innerText = "Show Password";
+        }
+      }
+    </script>
+  </body>
+</html>

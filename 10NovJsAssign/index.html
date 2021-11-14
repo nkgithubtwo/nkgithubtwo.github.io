@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10NovJsAssignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!--****  Ques No. - 1 Section****-->
+
+      <div class="section-1">
+        <h2 class="underline">Ques No - 1</h2>
+        <h3>Enter two numbers in between you want to generate an array :</h3>
+        <input type="text" id="numberOne" placeholder="First Number" />
+        <input type="text" id="numberTwo" placeholder="Second Number" />
+        <button class="btn" onclick="generateArr()">Generate</button>
+        <p id="result1"></p>
+      </div>
+
+      <!--****  Ques No. - 2 Section   ****-->
+
+      <div class="section-2">
+        <h2 class="underline">Ques No - 2</h2>
+        <h3>Enter numbers to add in array one by one :</h3>
+        <input type="text" placeholder="Enter a Number" id="add" />
+        <button onclick="addNumber()">Add</button>
+        <button onclick="findFreqNum()" class="btn2">Frequent Number</button>
+
+        <p id="arrItems"></p>
+        <p id="result2"></p>
+      </div>
+
+      <!--****  Ques No. - 3 Section  ****-->
+
+      <div class="section-3">
+        <h2 class="underline">Ques No - 3</h2>
+        <h3>Enter a number in inputbox :</h3>
+
+        <input type="text" placeholder="Enter a Number" id="num" />
+        <button onclick="primecheck()">Check</button>
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
