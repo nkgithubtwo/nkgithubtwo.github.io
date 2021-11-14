@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+.section-1 {
+  height: 330px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    lightgreen,
+    rgb(225, 248, 225),
+    lightgreen
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap row;
+}
+
+.section-2 {
+  height: 330px;
+  width: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgb(236, 115, 115),
+    rgb(241, 200, 200),
+    rgb(231, 112, 112)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap row;
+}
+
+.section-3 {
+  height: 330px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    lightgreen,
+    rgb(213, 252, 213),
+    lightgreen
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap row;
+}
+
+input {
+  height: 40px;
+  width: 180px;
+  outline: none;
+  font-size: 17px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+#h,
+#r {
+  margin-left: 20px;
+  border: 1px solid lightgreen;
+}
+
+button {
+  height: 45px;
+  width: 180px;
+  font-size: 17px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn {
+  margin-left: 20px;
+}
+
+.vol {
+  transition: 0.5s all;
+  background-color: lightgreen;
+  transition: 200ms;
+  box-sizing: border-box;
+  user-select: none;
+  border: none;
+}
+
+.vol:hover {
+  width: 185px;
+  height: 47px;
+  background-color: green;
+  color: white;
+}
+
+.curvedArea {
+  transition: 0.5s all;
+  background-color: rgb(243, 104, 104);
+  transition: 200ms;
+  box-sizing: border-box;
+  user-select: none;
+  border: none;
+  margin-left: 20px;
+}
+
+#c,
+#v {
+  margin-left: 20px;
+  border: 1px solid pink;
+}
+
+.curvedArea:hover {
+  width: 185px;
+  height: 47px;
+  color: white;
+  background-color: rgb(224, 69, 69);
+}
+
+.totalArea {
+  transition: 0.5s all;
+  background-color: rgb(130, 130, 252);
+  transition: 200ms;
+  box-sizing: border-box;
+  user-select: none;
+  border: none;
+}
+
+.totalArea:hover {
+  width: 185px;
+  height: 47px;
+  color: white;
+  background-color: rgb(52, 52, 250);
+}
+
+#ht,
+#wd,
+#area {
+  margin-left: 20px;
+  border: 1px solid lightgreen;
+}
+
+p {
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}

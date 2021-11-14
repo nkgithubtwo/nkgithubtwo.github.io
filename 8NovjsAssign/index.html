@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8Nov Assignment</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-1">
+        <h3>Ques No - 1 : -</h3>
+
+        <input type="text" placeholder="Enter height here.." id="h" />
+        <input type="text" placeholder="Enter radius here.." id="r" />
+        <button onclick="calcVol()" class="vol btn">Volume</button>
+        <button onclick="calcCurvedArea()" class="curvedArea btn">
+          Curved Area
+        </button>
+        <button onclick="calcTotalArea()" class="totalArea btn">
+          Total Area
+        </button>
+        <p id="result1"></p>
+      </div>
+
+      <div class="section-2">
+        <h3>Ques No - 2 : -</h3>
+
+        <input type="text" placeholder="Enter Voltage here.." id="v" />
+        <input type="text" placeholder="Enter current here.." id="c" />
+        <button onclick="power()" class="curvedArea">Power</button>
+        <p id="result2"></p>
+      </div>
+      <div class="section-3">
+        <h3>Ques No - 3 : -</h3>
+        <input type="text" placeholder="Height of single wall.." id="ht" />
+        <input type="text" placeholder="Width of single wall .." id="wd" />
+        <input type="text" placeholder="Total Area for painting.." id="area" />
+        <button onclick="no_of_walls()" class="vol btn">
+          Max painted Walls
+        </button>
+        <p id="result3"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
