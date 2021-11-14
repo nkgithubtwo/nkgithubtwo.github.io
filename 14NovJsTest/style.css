@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+
+.outer-container {
+  height: 80%;
+  width: 85vw;
+  margin: auto;
+  background-color: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+
+.inner-container {
+  width: 85vw;
+  margin: auto;
+  background-color: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow: nowrap column;
+}
+
+#heading {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 40px;
+  color: #c59e5e;
+}
+
+p {
+  width: 40vw;
+  background-color: white;
+  font-family: sans-serif;
+  letter-spacing: 0.3ch;
+  box-shadow: 0 1px 5px 0 lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: nowrap row;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+#ans1,
+#ans2,
+#ans3 {
+  margin-top: -16px;
+  display: none;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  max-height: 200px;
+  letter-spacing: 0.2ch;
+}
+
+button {
+  font-size: 20px;
+  padding: 0;
+  color: #c59e5e;
+  border: 2px solid #c59e5e;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background-color: #c59e5e;
+}
+
+.txtArea {
+  width: 100%;
+  height: 8%;
+  border: 1px solid #b5bec5;
+  border-top: none;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  font-size: 17px;
+}
