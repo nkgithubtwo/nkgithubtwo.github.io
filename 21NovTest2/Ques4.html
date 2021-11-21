@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 4</title>
+  </head>
+  <body>
+    <script>
+      // Code for upper Pyramid part
+      var lb = 5;
+      var ub = 5;
+      let str = "";
+      for (var i = 1; i <= 5; i++) {
+        for (var j = 1; j <= 9; j++) {
+          if (j >= lb && j <= ub) {
+            str += "*";
+          } else {
+            str += " ";
+          }
+        }
+        lb--;
+        ub++;
+        str += "\n";
+      }
+
+      //code for lower Pyramid part
+      lb = 2;
+      ub = 8;
+      let str1 = "";
+      for (var l = 1; l <= 4; l++) {
+        for (var m = 1; m <= 8; m++) {
+          if (m >= lb && m <= ub) {
+            str1 += "*";
+          } else {
+            str1 += " ";
+          }
+        }
+        lb++;
+        ub--;
+        str1 += "\n";
+      }
+      console.log(str + str1);
+    </script>
+  </body>
+</html>
