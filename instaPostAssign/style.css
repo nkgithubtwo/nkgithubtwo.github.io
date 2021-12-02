@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+}
+
+.container {
+  height: 77%;
+  width: 615px;
+  display: flex;
+  border: 2px solid grey;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.header {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap row;
+  background-color: lightgray;
+  padding-left: 15px;
+}
+
+#men_img {
+  border-radius: 50%;
+}
+
+.name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.vert_dot {
+  padding-left: 470px;
+}
+
+.car_img {
+  height: 408px;
+}
+.icons {
+  display: flex;
+  flex-flow: nowrap row;
+  height: 25px;
+  width: 100%;
+  background-color: blue;
+  padding-left: 5px;
+  align-items: center;
+}
+
+.pad_left {
+  padding-left: 5px;
+}
+.mark_icon {
+  padding-left: 495px;
+}
+
+.space_left {
+  padding-left: 12px;
+}
+
+.footer {
+  padding-left: 12px;
+  display: flex;
+}
+
+input {
+  margin: 2px 5px;
+  width: 200px;
+  border: none;
+  outline: none;
+  height: 30px;
+  padding-left: 5px;
+  background-color: lightgray;
+}
