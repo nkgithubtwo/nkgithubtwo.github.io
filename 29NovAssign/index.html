@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      .space {
+        margin-top: 6%;
+      }
+    </style>
+  </head>
+  <body class="bg-info space">
+    <div class="container bg-info mt-5 shadow-lg mt-5 rounded">
+      <div class="row">
+        <div class="col-3 my-auto text-center">
+          <img
+            src="https://geekster.in/wp-content/uploads/2021/02/Geekster_logo_only_G.png"
+            class="mt-2 text-center h-75 w-75"
+          />
+          <p class="text-white">
+            The school where you code your success stories.
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="card w-100 fw-bold text-center">
+            <div class="card-body">
+              <div class="text-end bg-white boder-top">Need help?</div>
+
+              <p class="text-center fs-4 mt-5">Log In</p>
+              <label class="mt-3">Email</label><br />
+              <input
+                type="email"
+                placeholder="joe@gmail.com"
+                class="p-1 mt-2 w-75 text-center opacity-75"
+                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                "
+                required
+              /><br />
+              <label class="mt-3">Password</label><br />
+              <input
+                type="Password"
+                placeholder="Enter your Password"
+                class="p-1 mt-2 w-75 text-center opacity-75"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              /><br />
+              <p class="text-end color-white me-5">
+                <a href="#">Forgot Password?</a>
+              </p>
+              <br />
+              <button
+                type="submit"
+                class="
+                  btn-success
+                  my-5
+                  py-2
+                  px-5
+                  w-75
+                  fw-bold
+                  bg-info
+                  rounded-2
+                  border-0
+                "
+              >
+                Login
+              </button>
+              <p>New User? <a href="registration.html">Click here</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 text-white m-auto text-center">
+          <img
+            class="text-center h-75 w-75"
+            src="https://mechomotive.com/wp-content/uploads/2021/08/Geekster_logo_full-1024x264-1.png"
+          />
+
+          <p class="mt-3">Pay Rs 0 before placement.</p>
+          <p>Your dream company is just a click away.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
