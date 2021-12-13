@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+    <h2>Admission Form for Geekster</h2>
+    <div class="form-container">
+        <form autocomplete="on">
+            <!-- 
+            First Name, Last Name,
+            DOB, Email id, Gender, Address, College Name 
+            Resume.
+        -->
+
+            <input type="text" class="inline" name="f_name" placeholder="First Name" autocomplete="on" required />
+            <input type="text" class="inline" name="l_name" placeholder="Last Name" /><br />
+            <input type="email" class="inline" name="mail" placeholder="Email ID" required />
+            <input type="number" class="inline" name="phone" placeholder="Phone Number" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" title="Please enter in the format" /><br />
+            <input type="datetime-local" class="inline" name="date_of_birth" max="2022-01-01" />
+
+            <select name="gender" class="inline">
+             <option>Male</option>
+             <option>Female</option>
+             <option active>Other</option>
+          <!--
+                 <optgroup label="other something">
+                 <option>other 1</option>
+                 <option>other 2</option>
+                 <option>other 3</option>
+             </optgroup>
+             >
+             -->
+        </select>
+
+            <textarea name="address" placeholder="Address"></textarea>
+            <h3>Education Info :</h3>
+            <select class="inline">
+          <optgroup label="Bachelors">
+            <option>B. Tech</option>
+            <option selected disabled>B.E</option>
+            <option>B. Sc</option>
+          </optgroup>
+          <optgroup label="Masters">
+            <option>M.Sc</option>
+            <option>M.Tech</option>
+            <option>M.E</option>
+          </optgroup>
+          <input type="text" class="inline" name="college" placeholder="College Name" />
+          <input
+            class="inline"
+            type="number"
+            name="graduation_year"
+            placeholder="Year of graduation"
+            max="2022"
+            min="2010"
+          />
+          <input
+            class="inline"
+            type="number"
+            name="per"
+            placeholder="Percentage"
+            max="100"
+            min="33"
+            step="0.1"
+          />
+        </select>
+            <input type="file" />
+            <h3>Course Details :</h3>
+            <input type="radio" class="inline course" name="course_type" />Fundamentals
+            <input type="radio" class="inline course" name="course_type" />Advanced
+            <br />
+            <input type="checkbox" class="inline course" name="course_name" />Web
+            <input type="checkbox" class="inline course" name="course_name" />DSA
+            <hr />
+            <input class="inline submit" type="submit" value="Apply for Admission" />
+            <input class="inline reset" type="reset" value="Reset" />
+        </form>
+    </div>
+</body>
+
+</html>

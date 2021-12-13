@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  flex-flow: nowrap column;
+  background-image: url("https://images.pexels.com/photos/5717479/pexels-photo-5717479.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  padding: 20px 0;
+  display: flex;
+  flex-flow: nowrap column;
+  flex-basis: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  opacity: 0.8;
+  width: 50%;
+}
+
+.todoList {
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskList {
+  display: flex;
+  flex-flow: nowrap row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  background-color: cadetblue;
+}
+
+input[type="text"] {
+  width: 50%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-align: center;
+  outline: none;
+}
+
+button {
+  font-weight: bolder;
+  color: brown;
+  background-color: white;
+  outline: none;
+  border: none;
+  margin: 10px;
+}
+
+button:hover {
+  color: white;
+  background-color: brown;
+}
+
+#add_task_button {
+  width: 40%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bolder;
+  color: black;
+}
+#add_task_button:hover {
+  width: 40%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bolder;
+  color: white;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 18px;
+  padding: auto;
+}
+
+
+
+
+li{
+  font-size: 20px;
+  padding-right: 20px;
+  color: black;
+  list-style-type: number;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+}
+li.todoList.checked{
+  text-decoration: line-through;
+}
+
+li:nth-child(odd) {
+  background-color: lightgray;
+}
+li:nth-child(even) {
+  background-color: white;
+}
+
+li:hover {
+    background-color: grey;
+
+}
+
+
+

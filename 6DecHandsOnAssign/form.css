@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGFuZGluZyUyMHBhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+
+    
+ 
+}
+
+input,
+select,
+textarea {
+    display: block;
+    margin: 5px;
+    padding: 3px;
+    height: 28px;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    width: 231px;
+    border: none;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    width: 500px;
+    margin: 50px auto;
+    height: 35px;
+    background: linear-gradient(to right,black, grey , black);
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 10px;
+    padding: 0 10px;
+    color:white;
+    background: linear-gradient(to right, black, grey , black);
+    width: 140px;
+    opacity: 1;
+}
+
+.inline {
+    display: inline;
+}
+
+.course{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    padding: 0;
+}
+
+.form-container {
+    background-color: transparent;
+    opacity: 0.8;
+    width: 500px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+.submit{
+    background-color: transparent;
+    color: green;
+    height: 40px;
+    width: 237px;
+    border: 2px solid green;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: green;
+    color: whitesmoke;
+    height: 40px;
+    width: 237px;
+    cursor: pointer;
+}
+
+.reset{
+    background-color: transparent;
+    color: red;
+    height: 40px;
+    width: 237px;
+    border: 2px solid red;
+    cursor: pointer; 
+}
+
+.reset:hover{
+    background-color: red;
+    color: whitesmoke;
+    height: 40px;
+    width: 237px;
+    cursor: pointer; 
+}
