@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2_Jan_Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Gallery</h1>
+    <div class="flex-container">
+      <img src="images/beer.jpg" onclick="func(this);" />
+      <img src="images/bird.jpg" onclick="func(this);" />
+      <img src="images/bird3.jpg" onclick="func(this);" />
+      <img src="images/butterfly.jpg" onclick="func(this);" />
+      <img src="images/deer.jpg" onclick="func(this);" />
+      <img src="images/fox.jpg" onclick="func(this);" />
+      <img src="images/fox2.jpg" onclick="func(this);" />
+      <img src="images/goat.jpg" onclick="func(this);" />
+      <img src="images/panda.jpg" onclick="func(this);" />
+      <img src="images/squirrel.jpg" onclick="func(this);" />
+      <img src="images/squirrel2.jpg" onclick="func(this);" />
+      <img src="images/tiger.jpg" onclick="func(this);" />
+    </div>
+
+    <div id="img-container">
+        <span onclick="this.parentElement.style.display='none'"></span>
+
+      <img src="" class="res_img" id="newImg"/>
+    </div>
+    <script>
+      function func(image) {
+        let img = document.getElementById("newImg");
+        img.src = image.src;
+        img.parentElement.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
