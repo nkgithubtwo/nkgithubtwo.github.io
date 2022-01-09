@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5vw;
+  margin: 20px;
+}
+
+.section-one {
+  height: 100%;
+  width: 300px;
+  padding: 0 10px;
+  background-color: #b0ecd1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1vw;
+  border-radius: 50px;
+}
+
+.section-two {
+  height: 100%;
+  width: 370px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-three {
+  height: 100%;
+  width: 300px;
+  padding: 0 10px;
+  background-color: #ad5472;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1vw;
+  border-radius: 50px;
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#btn_result1,
+#btn_result3 {
+  width: 250px;
+  height: 40px;
+  text-decoration: none;
+  border: none;
+  background-color: #4cbb4c;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#btn_result1:hover,
+#btn_result3:hover {
+  color: white;
+  background-color: green;
+}
+
+#result1,
+#result3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-container {
+  height: 670px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 50px;
+  padding: 10px;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+.btn_pin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn_num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  font-size: 22px;
+  color: rgb(43, 209, 192);
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+
+.btn:hover {
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  color: #fff;
+  box-shadow: 0 0 5px 1px whitesmoke;
+}
+
+.btn-pin {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+}
+
+.set_pin {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#pin_one,
+#pin_two {
+  letter-spacing: 0.2ch;
+}
+
+#set_pin_btn {
+  width: 250px;
+  height: 40px;
+  background-color: #08aeea;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#set_pin_btn:hover {
+  background-color: rgb(17, 102, 136);
+  color: #fff;
+}
+
+/* Welcome Page Css Down Below */
+
+.welcome-section {
+  height: 90vh;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 0.3ch;
+  word-spacing: 1ch;
+  font-size: 30px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2nd_JAN_Assign</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!------------------------- Question 01  ------------------------------->
+    <section class="section-one">
+      <h2>Question No. 01</h2>
+      <input
+        type="text"
+        placeholder="Enter Number for Factorial"
+        id="factNum"
+      />
+      <button id="btn_result1">Factorial</button>
+      <div id="result1"></div>
+    </section>
+
+    <!------------------------     Question 02     --------------------------->
+    <section class="section-two">
+      <h2>Question No .02</h2>
+      <div class="btn-container">
+        <div class="btn_pin">
+          <span id="digit_0"></span>
+          <span id="digit_1"></span>
+          <span id="digit_2"></span>
+          <span id="digit_3"></span>
+        </div>
+        <div class="btn_num">
+          <button class="btn" id="num_1">1</button>
+          <button class="btn" id="num_2">2</button>
+          <button class="btn" id="num_3">3</button>
+          <button class="btn" id="num_4">4</button>
+          <button class="btn" id="num_5">5</button>
+          <button class="btn" id="num_6">6</button>
+          <button class="btn" id="num_7">7</button>
+          <button class="btn" id="num_8">8</button>
+          <button class="btn" id="num_9">9</button>
+          <button class="btn" id="num_0">0</button>
+          <button class="btn" id="clear">CLR</button>
+        </div>
+        <div class="set_pin" id="hide">
+          <input
+            type="text"
+            id="pin_one"
+            placeholder="Enter 4 digit Pin"
+            minlength="4"
+            maxlength="4"
+          />
+          <input
+            type="text"
+            id="pin_two"
+            placeholder="Confirm Pin"
+            minlength="4"
+            maxlength="4"
+          />
+          <button id="set_pin_btn">Set Pin</button>
+        </div>
+      </div>
+      <div id="page"></div>
+    </section>
+
+    <!-- ----------------------------  Question 03   -------------------- -->
+    <section class="section-three">
+      <h2>Question No. 03</h2>
+      <input
+        type="text"
+        placeholder="Enter Number for FizzBuzz Series"
+        id="input"
+        required
+      />
+      <button id="btn_result3">FizzBuzz Series</button>
+      <div id="result3"></div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
