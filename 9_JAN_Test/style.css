@@ -1,0 +1,59 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+}
+
+#result {
+  background-color: white;
+  height: 400px;
+  width: 900px;
+  margin: auto;
+  position: relative;
+  margin-top: 64px;
+}
+
+.block {
+  width: 28px;
+  background-color: #6b5b95;
+  position: absolute;
+  bottom: 0px;
+  transition: 0.2s all ease;
+}
+
+.block_id {
+  position: absolute;
+  color: black;
+  margin-top: -20px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  outline: none;
+  border: none;
+}
+
+#new_arr:hover {
+  background-color: rgb(211, 73, 93);
+  color: white;
+}
+
+#sort_num:hover {
+  background-color: limegreen;
+  color: #fff;
+}
