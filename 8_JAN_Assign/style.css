@@ -1,0 +1,243 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: radial-gradient(#713f9b , #482664 , #182048);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;
+}
+
+.quiz_container{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kbc_logo{
+    width: 30rem;
+    height: 30rem;
+}
+
+.question{
+    border: 2px solid goldenrod;
+    padding: 15px 40px;
+    border-radius: 10%;
+    min-width: 100px;
+    background-image: linear-gradient(to top ,#713f9b ,#482664);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 20px;
+
+}
+
+div{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.option{
+    margin-top: 10px;
+    border: 2px solid goldenrod;
+    padding: 15px 40px;
+    border-radius: 10%;
+    min-width: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ******************************************** STOPWATCH CSS  ************************************************************** */
+
+.stopWatch_container{
+  height: 100vh;
+  width: 50%;
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.lap_Title{
+    height: 40px;
+    width: 220px;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+    border: none;
+}
+
+.lapButton{
+    width: 200px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+   
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    margin-bottom: 80px;
+}
+
+.lapButton:hover{
+    background-color: goldenrod;
+    color: white;
+}
+
+.timer{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+button{
+    width: 250px;
+    height:50px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.start{
+    border: 2px solid #58be58;
+    color: #58be58;
+}
+.start:hover{
+    background-color: #58be58;
+    color: #fff;
+}
+
+.stop{
+    border: 2px solid #ec3535;
+    color: #ec3535;
+}
+
+.stop:hover{
+    background-color: #ec3535;
+    color: #fff;
+}
+
+.reset{
+    border: 2px solid #fa703d;
+    color: #fa703d;
+}
+
+.reset:hover{
+    background-color: #fa703d;
+    color: #fff;
+}
+
+.timer_val{
+    font-size: 70px;
+}
+
+.modal{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(0, 0,0,0.8);
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    transform: translate(-50% , -50%);
+    display: flex;
+}
+
+.modal_content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.time{
+    height: 40px;
+    width: 140px;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+    border: none;
+}
+
+.add{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.add:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+.close {
+    color: #a3a1a1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover{
+      color: #fff;
+  }
+
+.hideModal{
+    display: none;
+}
+
+.showModal{
+    display: flex;
+}
+
+@media screen and (max-width:768px) {
+    body{
+        height: 1300px;
+        flex-direction: column;
+    }
+
+    .quiz_container{
+        width: 100%;
+        height: 800px;
+    }
+
+    .stopWatch_container{
+        width: 100%;
+        height: 500px;
+    }
+
+    .lapButton{
+        width: 200px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: all 0.3s ease-out;
+    }
+}

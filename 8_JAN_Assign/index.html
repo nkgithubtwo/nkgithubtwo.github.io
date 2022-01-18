@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8 JAN Assign</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz_container">
+      <img src="kbc_Logo.png" class="kbc_logo" />
+      <p id="ques" class="question">
+        Question 1. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Adipisci, neque.
+      </p>
+      <div>
+        <p id="opt_one" class="option">Option 1</p>
+        <p id="opt_two" class="option">Option 2</p>
+      </div>
+      <div>
+        <p id="opt_three" class="option">option 3</p>
+        <p id="opt_four" class="option">option 4</p>
+      </div>
+    </div>
+
+    <div class="stopWatch_container">
+
+  <h1>STOPWATCH TIMER</h1>
+
+      <div class="timer">
+          <h1 class="timer_val">00:00:00</h1>
+          <button class="start">Start</button>
+          <button class="stop">Stop</button>
+          <button class="reset">Reset</button>
+
+      </div>
+      <button class="lapButton">CREATE LAP</button>
+
+      <div id="modal" class="modal hideModal">
+        <div class="modal_content">
+          <div class="title">
+            <h2>Add LAP time</h2>
+            <span class="close">&times</span>
+          </div>
+          <input type="time" placeholder="Lap Time" class="time" value="00:00:00" step="1"/>
+          <button class="add">ADD</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
