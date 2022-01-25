@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search {
+  margin-top: 30px;
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search_items {
+  width: 600px;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.btn_submit {
+  height: 40px;
+  width: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.video_container {
+  min-height: 90vh;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
