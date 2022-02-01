@@ -5,8 +5,7 @@ let result_dis = document.querySelector("#result");
 let suggestion = document.querySelector(".sugg_val");
 let suggestion_block = document.querySelector(".suggestion");
 
-async function search_result(e) {
-  e.preventDefault();
+async function search_result() {
   let search_val = search_item.value;
   let cookie_str = "";
   cookie_str = `${search_val}=${search_val}; `;
@@ -53,14 +52,17 @@ function input_suggestion() {
         suggestion_block.classList.add("show");
         suggestion.innerHTML = item;
 
-        suggestion.addEventListener("click", () => {
+        suggestion_block.addEventListener("click", () => {
           search_item.value = item;
         });
       }
     }
+
+    window.onclick = function () {
+      suggestion_block.classList.remove("show");
+    };
   });
 }
-
 
 search_item.addEventListener("keyup", (event) => {
   if (event.keyCode === 13) {
@@ -69,4 +71,3 @@ search_item.addEventListener("keyup", (event) => {
 });
 
 search_item.addEventListener("input", input_suggestion);
-
