@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <div id="nav_container"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script src="index.js" type="module"></script>
+    <script type="text/babel">
+      class NavigationBar extends React.Component {
+        render() {
+          return (
+            <div>
+              <h2> hello Geeks</h2>
+              <button>Login</button>
+              <button>Sign Up</button>
+            </div>
+          );
+        }
+      }
+
+      class Gallery extends React.Component {
+        render() {
+          return (
+            <div className="gallery-container">
+              <div className="heading">
+                <h1>Image Gallery</h1>
+              </div>
+              <div className="images">
+                <img src="../images/a.jpg" />
+                <img src="../images/b.jpg" />
+                <img src="../images/c.jpg" />
+                <img src="../images/d.jpg" />
+                <img src="../images/e.jpg" />
+                <img src="../images/f.jpg" />
+                <img src="../images/g.jpg" />
+                <img src="../images/h.jpg" />
+              </div>
+            </div>
+          );
+        }
+      }
+
+      class App extends React.Component {
+        render() {
+          return <Gallery />;
+        }
+      }
+
+      ReactDOM.render(<App />, document.getElementById("nav_container"));
+    </script>
+  </body>
+</html>

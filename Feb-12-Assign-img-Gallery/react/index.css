@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    
+}
+
+img{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 10px 1px grey;
+    border-radius: 20px;
+
+}
+
+img:hover{
+    width: 330px;
+    height: 420px;
+    transition: 0.5s ease;
+}
+
+.gallery-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.heading{
+    margin: 30px 0;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px 0;
+}
